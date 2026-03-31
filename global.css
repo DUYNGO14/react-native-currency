@@ -71,11 +71,11 @@
     }
 
     .home-avatar {
-        @apply size-16 rounded-full;
+        @apply size-12 rounded-full;
     }
 
     .home-user-name {
-        @apply ml-4 text-2xl font-sans-bold text-primary;
+        @apply ml-4 text-xl font-sans-bold text-primary;
     }
 
     .home-add-icon {

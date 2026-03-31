@@ -28,7 +28,8 @@ declare global {
         color?: string;
     }
 
-    interface SubscriptionCardProps extends Omit<Subscription, "id"> {
+    interface SubscriptionCardProps  {
+        data: Subscription;
         expanded: boolean;
         onPress: () => void;
         onCancelPress?: () => void;

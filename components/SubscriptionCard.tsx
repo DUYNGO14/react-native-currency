@@ -34,7 +34,7 @@ const SubscriptionCard = ({data, expanded, onPress, onCancelPress, isCancelling}
                             </Text>
                             <Text className={'sub-value'} numberOfLines={1} ellipsizeMode={'tail'}>
                                 {
-                                    data.paymentMethod?.trim()
+                                    data.paymentMethod?.trim() || 'Not provided'
                                 }
                             </Text>
                         </View>
@@ -58,7 +58,7 @@ const SubscriptionCard = ({data, expanded, onPress, onCancelPress, isCancelling}
                             </Text>
                             <Text className={'sub-value'} numberOfLines={1} ellipsizeMode={'tail'}>
                                 {
-                                    data.startDate ? formatSubscriptionDateTime(data.startDate) : ''
+                                    data.startDate ? formatSubscriptionDateTime(data.startDate) : 'Not provided'
                                 }
                             </Text>
                         </View>
@@ -70,7 +70,7 @@ const SubscriptionCard = ({data, expanded, onPress, onCancelPress, isCancelling}
                             </Text>
                             <Text className={'sub-value'} numberOfLines={1} ellipsizeMode={'tail'}>
                                 {
-                                    data.renewalDate ? formatSubscriptionDateTime(data.renewalDate) : ''
+                                    data.renewalDate ? formatSubscriptionDateTime(data.renewalDate) : 'Not provided'
                                 }
                             </Text>
                         </View>
@@ -82,7 +82,7 @@ const SubscriptionCard = ({data, expanded, onPress, onCancelPress, isCancelling}
                             </Text>
                             <Text className={'sub-value'} numberOfLines={1} ellipsizeMode={'tail'}>
                                 {
-                                    data.renewalDate ? formatStatusLabel(data.status) : ''
+                                    data.renewalDate ? formatStatusLabel(data.status) : 'Not provided'
                                 }
                             </Text>
                         </View>
